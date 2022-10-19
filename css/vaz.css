@@ -1,0 +1,69 @@
+.vaz{
+    width: 500px;
+    height: 500px;
+    background-color: aqua; /*Фон можно заменить*/
+    position: absolute;
+}
+.vaz .up{/*верхняя часть машины*/
+    background-image: url(https://kartinkin.net/uploads/posts/2021-07/1627533867_22-kartinkin-com-p-serii-metall-tekstura-besshovnaya-krasivo-24.jpg);
+    width: 250px;
+    height: 160px;
+    position: absolute;
+    top: 11%;
+    right: 30%;
+    border-radius: 20% 20% 0 0 ;
+
+}
+.vaz .glass1{ /*переднее сиденье*/
+    width: 81px;
+    height: 97px;
+    background-color: aqua;
+    position: inherit;
+    top: 12%;
+    left: 56%;
+    border-radius: 12%;
+}
+.vaz .glass2{ /*заднее сиденье*/
+    width: 81px;
+    height: 97px;
+    background-color: aqua;
+    position: inherit;
+    top: 12%;
+    left: 12%;
+    border-radius: 12%;
+}
+.vaz .kuzov{ /* Кузов и есть кузов))))) */
+    width: 380px;
+    height: 100px;
+    background-image: url(https://kartinkin.net/uploads/posts/2021-07/1627533867_22-kartinkin-com-p-serii-metall-tekstura-besshovnaya-krasivo-24.jpg);
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+.vaz .left-weel-white{ /* фон левого колеса*/
+    width: 72px;
+    height: 72px;
+    background-color: inherit;
+    position: absolute;
+    top: 51.4%;
+    left: 13%;
+    border-radius: 50%;
+}
+.vaz .right-weel-white{ /* фон правого колеса*/
+    width: 72px;
+    height: 72px;
+    background-color: inherit;
+    position: absolute;
+    top: 51.4%;
+    left: 58%;
+    border-radius: 50%;
+}
+.vaz .weel{/* само колесо */
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 8%;
+    top: 7%;
+}

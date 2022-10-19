@@ -1,0 +1,135 @@
+.box {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     position: relative;
+    color: mediumvioletred;
+    z-index: 3;
+}
+
+.center {
+    width: 400px;
+    height: 80px;
+    /* background-color: mediumslateblue; */
+    background: linear-gradient(35deg, mediumseagreen, mediumvioletred);
+    border-radius: 27% 15% 8% 20% / 70% 20% 21% 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circle-1 {
+    position: relative;
+    top: 6%;
+    right: 24%;
+}
+
+.circle-2 {
+    position: relative;
+    top: 6%;
+    right: 12%;
+}
+
+.circle-1, .circle-2 {
+    width: 0;
+    height: 0;
+    background: black;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 30px;
+    border-top-color: gold;
+    border-right-color: transparent;
+    border-bottom-color: gold;
+    border-left-color: transparent;
+}
+.window {
+    width: 200px;
+    height: 40px;
+    /* background-color:skyblue; */
+    background: linear-gradient(35deg, ghostwhite, skyblue);
+    border-radius: 85% 15% 0% 0% / 100% 40% 0% 0%;
+    position: relative;
+    bottom: 59px;
+    right: 29%;
+    border: 1px solid black;
+}
+.fara1, .fara2 {
+    width: 26px;
+    height: 23px;
+    /* background-color: gold; */
+    background: linear-gradient(235deg, white, skyblue);
+    position: relative;
+    border-radius: 101% 30% 30% 100% / 100% 85% 85% 100%;
+    /* margin: 5px; */
+}
+
+.fara1 {
+    bottom: 2%;
+    right: 47%;
+}
+.fara2 {
+    top: 2%;
+    right: 50%;
+}
+.line {
+    width: 1px;
+    height: 80px;
+    background-color: #000;
+}
+.open-close {
+    width: 21px;
+    height: 6px;
+    border-radius: 50%;
+    bottom: 0%;
+    right: 39%;
+    background-color: #000;
+    position: relative;
+}
+
+.spoiler-1 {
+    height: 0;
+    width: 60px;
+    border-bottom: 13px solid black;
+    border-left: 10px solid transparent;
+    border-right: 50px solid transparent;
+    transform: rotate(-20deg);
+    position: relative;
+    bottom: 4%;
+    right: 30%;
+}
+.spoiler-2 {
+    height: 0;
+    width: 60px;
+    border-bottom: 13px solid black;
+    border-left: 10px solid transparent;
+    border-right: 50px solid transparent;
+    transform: rotate(-20deg);
+    position: relative;
+    bottom: 8%;
+    right: 38%;
+}
+
+.spoiler-3 {
+    width: 20px;
+    background-color: black;
+    height: 20px;
+    transform: rotate(-20deg);
+    position: relative;
+    bottom: 5%;
+    right: 44%;
+}
+
+.wihlop {
+    width: 0;
+    height: 0;
+    border-width: 28px 6px 15px;
+    border-style: solid;
+    border-color: #aa3681 mediumvioletred transparent;
+    /* background: linear-gradient(35deg, mediumseagreen, mediumvioletred); */
+    transform: rotate(-90deg);
+    position: relative;
+    top: 4%;
+    right: 45%;
+}

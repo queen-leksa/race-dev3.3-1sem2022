@@ -1,0 +1,180 @@
+.block-art {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.ufo__main {
+    width: 60%;
+    height: 10%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #DB4D69;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.ufo__engine {
+    background-color: #CB3F5B;
+    position: absolute;
+    width: 30%;
+    height: 15%;
+    border-radius: 50%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.ufo__cabin {
+    position: absolute;
+    background: #EAAABA;
+    width: 25%;
+    height: 21%;
+    border-radius: 45px 45px 0px 0px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ufo::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/triangle.svg);
+    width: 40%;
+    height: 40%;
+    top: 55%;
+    left: 31%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cat__head {
+    background: #B8AFB4;
+    position: absolute;
+    width: 11%;
+    height: 10%;
+    border-radius: 50%;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cat__head::before {
+    content: "";
+    width: 20%;
+    height: 22%;
+    background: #000507;
+    position: absolute;
+    border-radius: 50%;
+    top: 25%;
+    left: 18%;
+}
+
+.cat__head::after {
+    content: "";
+    width: 20%;
+    height: 22%;
+    background: #000507;
+    position: absolute;
+    border-radius: 50%;
+    top: 29%;
+    right: 18%;
+}
+
+.cat__ear {
+    background-image: url("../img/cat-ear.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 5%;
+    height: 5%;
+    top: 37%;
+    left: 51%;
+    position: absolute;
+}
+
+.cat__ear--rotate {
+    left: 44%;
+    transform: rotate(-74.95deg);
+}
+
+.cat__mouth {
+    background: #DB8D8D;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    position: absolute;
+    top: 42%;
+    left: 49%;
+}
+
+.alien {
+    width: 11%;
+    height: 24%;
+    position: absolute;
+    top: 74%;
+    left: 46%;
+    animation: alienAnimation linear 3s infinite;
+}
+
+.alien__head {
+    background: #00F38D;
+    border-radius: 32px 32px 50px 50px;
+    position: absolute;
+    width: 70%;
+    height: 33%;
+}
+
+.alien__head::after {
+    content: "";
+    width: 22%;
+    height: 27%;
+    background: #000507;
+    position: absolute;
+    top: 29%;
+    right: 18%;
+    border-radius: 15px 7px 22px 1px;
+    transform: rotate(1.83deg);
+}
+
+.alien__head::before {
+    content: "";
+    width: 22%;
+    height: 27%;
+    background: #000507;
+    position: absolute;
+    top: 29%;
+    left: 18%;
+    border-radius: 15px 7px 22px 1px;
+    transform: matrix(-1, 0.03, 0.03, 1, 0, 0);
+}
+
+.alien__mouth {
+    background: #DB8D8D;
+    width: 20%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    top: 22%;
+    left: 26%;
+}
+
+@keyframes alienAnimation {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(20px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
