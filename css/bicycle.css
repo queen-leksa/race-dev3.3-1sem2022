@@ -1,7 +1,7 @@
 .bc {
     width: 200px;
     height: 100px;
-    background-color: peachpuff;
+    transform: scale(-1,1);
     position: relative;
 }
 .bc-wheel {

@@ -1,16 +1,26 @@
 body {
     margin: 0;
     display: grid;
-    grid-template-rows: repeat(2, 100px);
-    grid-template-columns: 200px;
-    gap: 100px;
-    height: 100vh;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: 200px 1fr 200px;
+    gap: 20px;
     justify-content: flex-end;
-    align-items: flex-start;
-    width: 250px;
+    align-items: stretch;
+    width: 100vw;
 }
 body>* {
     justify-self: flex-end;
+}
+.race-line {
+    width: 50px;
+    justify-self: flex-start;
+    background: #000;
+    grid-row-end: span 3;
+    grid-column-start: 2;
+
+}
+.race-line:nth-child(2) {
+    grid-column-start: 3;
 }
 /*.vaz {*/
 /*    height: 100px;*/
@@ -19,4 +29,8 @@ body>* {
 .block-art {
     width: 100px;
     height: 100px;
+    grid-row-start: 1;
+}
+[data-type] {
+    transition: left 1s linear;
 }
